@@ -1,9 +1,10 @@
-FROM debian:bookworm-slim
+FROM registry.access.redhat.com/ubi9/ubi-minimal:9.5
 
 ARG NATIVE_APP=target/spring-crud
 COPY ${NATIVE_APP} /usr/local/bin/java-app/native_app
 RUN chmod +x /usr/local/bin/java-app/native_app
 
 EXPOSE 8080
+USER 1001
 
 CMD ["/usr/local/bin/java-app/native_app"]
