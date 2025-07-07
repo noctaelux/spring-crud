@@ -1,4 +1,4 @@
-FROM debian:bookworm-slim
+FROM eclipse-temurin:21-jre-alpine
 
 ARG NATIVE_APP=target/spring-crud
 COPY ${NATIVE_APP} /usr/local/bin/java-app/native_app
