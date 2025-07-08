@@ -1,0 +1,1 @@
+insert into producto (id,nombre,descripcion,sku,precio,existencia,fecha_creacion,fecha_modificacion) values (1001,'Producto 1', 'Un producto de prueba', '111111', 99.90, 5, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
